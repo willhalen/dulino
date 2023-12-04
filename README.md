@@ -14,6 +14,9 @@ No Sass simplifica a escrita do código CSS usando aninhamento e variáveis, dei
 Pode se copilar o Sass para CSS em ferramentas online ou mesmo
 caso entenda da semantica manualmente, testa-lo amtes de usar no seu projeto atual.
 
+<img src="https://raw.githubusercontent.com/willhalen/dulino/main/img-01-desk.jpg">
+<img src="https://raw.githubusercontent.com/willhalen/dulino/main/img-02-mobile.jpg">
+
 Neste exemplo:
 Foi utilizado: Node.js e Compress.
 Biblioteca Bootstrap para estilização geral da pagina.
