@@ -32,32 +32,24 @@
     border-radius: 5px;
 }
 
-section {
-    width: 990px; margin: 0 auto;
-}
-
 </style>
 <body>
 
-    <section class=" p-4">
+    <div class="container py-5 px-5">
         <h2>Teste 01 - Explicação</h2>
-            <p>No exemplo, estamos usando grid-template-columns para criar um layout de grade responsivo.</p>
-            <p>A propriedade repeat(auto-fit, minmax(200px, 1fr)) significa que o número de colunas será ajustado automaticamente para caber na largura do contêiner, e cada coluna terá no mínimo 200 pixels de largura e ocupará a fração restante do espaço disponível (1fr).</p> 
-            <p>No Sass simplifica a escrita do código CSS usando aninhamento e variáveis, deixando o codigo mais legível e fácil de manutenção.</p> 
-            <p> Pode se copilar o Sass para CSS em ferramentas online ou mesmo caso entenda da semantica manualmente, testa-lo amtes de usar no seu projeto atual.</p>
-
-        <div class="grid-container">
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-            
-            
-            <div class="item">5</div>
-            <div class="item">6</div>
-            <div class="item">7</div>
-            <div class="item">8</div> 
-            <!-- assim por diante ... -->        
-        </div>
-    </section>
+        <p>No exemplo, estamos usando grid-template-columns para criar um layout de grade responsivo.</p>
+        <p>A propriedade repeat(auto-fit, minmax(200px, 1fr)) significa que o número de colunas será ajustado automaticamente para caber na largura do contêiner, e cada coluna terá no mínimo 200 pixels de largura e ocupará a fração restante do espaço disponível (1fr).</p> 
+        <p>No Sass simplifica a escrita do código CSS usando aninhamento e variáveis, deixando o codigo mais legível e fácil de manutenção.</p> 
+        <p> Pode se copilar o Sass para CSS em ferramentas online ou mesmo caso entenda da semantica manualmente, testa-lo amtes de usar no seu projeto atual.</p>
+    </div>
+    <div class="grid-container">       
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>      
+    </div>
 </body>
