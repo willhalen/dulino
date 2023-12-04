@@ -1,48 +1,52 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Responsive Grid Layout</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <style>
     body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+    }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    margin: 0 auto;
-}
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin: 0 auto;
+    }
 
-.item {
-    background-color: #3498db;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-}
-
+    .item {
+        background-color: #3498db;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
 </style>
+
 <body>
 
     <div class="container py-5 px-5">
         <h2>Teste 01 - CSS</h2>
         <p>No exemplo, estamos usando grid-template-columns para criar um layout de grade responsivo.</p>
-        <p>A propriedade repeat(auto-fit, minmax(200px, 1fr)) significa que o número de colunas será ajustado automaticamente para caber na largura do contêiner, e cada coluna terá no mínimo 200 pixels de largura e ocupará a fração restante do espaço disponível (1fr).</p> 
-        <p>No Sass simplifica a escrita do código CSS usando aninhamento e variáveis, deixando o codigo mais legível e fácil de manutenção.</p> 
-        <p> Pode se copilar o Sass para CSS em ferramentas online ou mesmo caso entenda da semantica manualmente, testa-lo amtes de usar no seu projeto atual.</p>
+        <p>A propriedade repeat(auto-fit, minmax(200px, 1fr)) significa que o número de colunas será ajustado
+            automaticamente para caber na largura do contêiner, e cada coluna terá no mínimo 200 pixels de largura e
+            ocupará a fração restante do espaço disponível (1fr).</p>
+        <p>No Sass simplifica a escrita do código CSS usando aninhamento e variáveis, deixando o codigo mais legível e
+            fácil de manutenção.</p>
+        <p> Pode se copilar o Sass para CSS em ferramentas online ou mesmo caso entenda da semantica manualmente,
+            testa-lo amtes de usar no seu projeto atual.</p>
     </div>
-    <div class="grid-container">       
+    <div class="grid-container">
         <div class="item">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
@@ -50,45 +54,69 @@
         <div class="item">5</div>
         <div class="item">6</div>
         <div class="item">7</div>
-        <div class="item">8</div>      
+        <div class="item">8</div>
     </div>
+    <div class="container py-5 px-5">
+    <h2> Teste 04 - Armazenamento de dados do usuário - Client Side</h2>
+    <p>
+        O armazenamento de dados do usuário no lado do cliente é uma prática comum em aplicativos web para melhorar a
+        experiência offline e otimizar o desempenho. Existem três principais opções para armazenamento de dados
+        client-side: localStorage, sessionStorage e IndexedDB. Vamos explorar cada uma delas, destacando suas
+        diferenças, casos de uso e considerações específicas.
+    </p>
 
-    <h2> 04 - Armazenamento de dados do usuário - Client Side</h2>
-    <p>O armazenamento de dados do usuário no lado do cliente é uma prática comum em aplicativos web para melhorar a experiência offline e otimizar o desempenho. Existem três principais opções para armazenamento de dados client-side: localStorage, sessionStorage e IndexedDB. Vamos explorar cada uma delas, destacando suas diferenças, casos de uso e considerações específicas.
+    <p><strong>LocalStorage:</strong>
+        <span>Descrição: localStorage permite armazenar dados de forma persistente no navegador. Os dados armazenados
+            persistem mesmo quando
+            o usuário fecha o navegador e retorna posteriormente.</span>
+        <span>Casos de Uso:</span>
+        <span>Preferências do Usuário: Pode ser usado para armazenar configurações ou preferências do usuário que devem
+            persistir entre sessões.</span>
+        <span>Cache de Dados Estáticos: Útil para armazenar dados que não mudam com frequência e podem ser reutilizados
+            em várias sessões.</span>
+        <span>Considerações/Limitações:</span>
+        <span>Tamanho Limite: Geralmente, o limite de armazenamento é de 5 MB por domínio.</span>
+        <span>Segurança: Os dados são acessíveis por meio do console do navegador, portanto, não deve ser usado para
+            informações sensíveis.</span>
+    </p>
 
-        localStorage:
-            Descrição: localStorage permite armazenar dados de forma persistente no navegador. Os dados armazenados persistem mesmo quando o usuário fecha o navegador e retorna posteriormente.
-            Casos de Uso:
-                Preferências do Usuário: Pode ser usado para armazenar configurações ou preferências do usuário que devem persistir entre sessões.
-                Cache de Dados Estáticos: Útil para armazenar dados que não mudam com frequência e podem ser reutilizados em várias sessões.
-            Considerações/Limitações:
-                Tamanho Limite: Geralmente, o limite de armazenamento é de 5 MB por domínio.
-                Segurança: Os dados são acessíveis por meio do console do navegador, portanto, não deve ser usado para informações sensíveis.
-    
-        sessionStorage:
-            Descrição: Similar ao localStorage, mas os dados armazenados no sessionStorage são específicos de uma sessão. Os dados são removidos quando a sessão do navegador é fechada.
-            Casos de Uso:
-                Dados de Sessão Temporários: Útil para armazenar temporariamente dados durante uma sessão, como informações de um formulário.
-                Recuperação de Dados Pós-Recarregamento: Se o usuário recarregar a página, os dados armazenados no sessionStorage ainda estão disponíveis.
-            Considerações/Limitações:
-                Limite de Sessão: Os dados são específicos da sessão atual e não persistem entre sessões.
-                Tamanho Limite: Geralmente, o mesmo limite de 5 MB por domínio se aplica.
-    
-        IndexedDB:
-            Descrição: IndexedDB é um banco de dados NoSQL no navegador que permite armazenar grandes quantidades de dados estruturados. Ele fornece uma API mais poderosa, mas também mais complexa.
-            Casos de Uso:
-                Dados Complexos e Relacionados: Útil para armazenar grandes conjuntos de dados ou dados mais complexos que precisam de indexação e consultas.
-                Aplicações Offline Avançadas: Pode ser usado em aplicações mais complexas que requerem armazenamento offline de dados complexos.
-            Considerações/Limitações:
-                Complexidade: Requer um entendimento mais avançado em comparação com localStorage e sessionStorage.
-                Segurança: Deve ser utilizado com cuidado devido à manipulação de dados mais avançada.
-    
-    Considerações Gerais:
-    
-        Segurança: Evite armazenar informações sensíveis no lado do cliente, mesmo com criptografia.
-        Compatibilidade: Verifique a compatibilidade com diferentes navegadores para garantir que sua escolha funcione bem em todos os ambientes.
-        Limpeza de Dados: Certifique-se de limpar dados desnecessários para evitar o acúmulo excessivo de informações no lado do cliente.
-    
-    Escolha a opção que melhor se adapte às necessidades específicas do seu projeto, considerando a complexidade dos dados, a persistência desejada e as limitações de cada método.</p>
+    <p><strong>SessionStorage:</strong>
+        <span> Descrição: Similar ao localStorage, mas os dados armazenados no sessionStorage são específicos de
+            uma sessão. Os dados são removidos quando a sessão do navegador é fechada.</span>
+        <span>Casos de Uso:</span>
+        <span>Dados de Sessão Temporários: Útil para armazenar temporariamente dados durante uma sessão, como
+            informações de um formulário.</span>
+        <span>Recuperação de Dados Pós-Recarregamento: Se o usuário recarregar a página, os dados armazenados no
+            sessionStorage ainda estão disponíveis.</span>
+        <span>Considerações/Limitações:</span>
+        <span>Limite de Sessão: Os dados são específicos da sessão atual e não persistem entre sessões.</span>
+        <span>Tamanho Limite: Geralmente, o mesmo limite de 5 MB por domínio se aplica.</span>
+    </p>
+
+    <p><strong>IndexedDB:</strong>
+        <span>Descrição: IndexedDB é um banco de dados NoSQL no navegador que permite armazenar grandes quantidades de
+            dados
+            estruturados. Ele fornece uma API mais poderosa, mas também mais complexa.</span>
+        <span>Casos de Uso:</span>
+        <span>Dados Complexos e Relacionados: Útil para armazenar grandes conjuntos de dados ou dados mais complexos que
+            precisam de indexação e consultas.</span>
+        <span>Aplicações Offline Avançadas: Pode ser usado em aplicações mais complexas que requerem armazenamento
+            offline de dados complexos.</span>
+        <span>Considerações/Limitações:</span>
+        <span>Complexidade: Requer um entendimento mais avançado em comparação com localStorage e sessionStorage.</span>
+        <span>Segurança: Deve ser utilizado com cuidado devido à manipulação de dados mais avançada.</span>
+    </p>
+
+    <p><strong>Considerações Gerais:</strong>
+
+        <span>Segurança: Evite armazenar informações sensíveis no lado do cliente, mesmo com criptografia.</span>
+        <span>Compatibilidade: Verifique a compatibilidade com diferentes navegadores para garantir que sua escolha
+            funcione bem em todos os ambientes.</span>
+        <span>Limpeza de Dados: Certifique-se de limpar dados desnecessários para evitar o acúmulo excessivo de
+            informações no lado do cliente.</span>
+    </p>
+
+    <p>Escolha a opção que melhor se adapte às necessidades específicas do seu projeto, considerando a complexidade dos
+        dados, a persistência desejada e as limitações de cada método.</p>
+    </div>
 </body>
-
