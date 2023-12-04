@@ -31,7 +31,7 @@ caso entenda da semantica manualmente, testa-lo amtes de usar no seu projeto atu
 Foi utilizado: Node.js e Compress.
 Biblioteca Bootstrap para estilização geral da pagina.
 
-# Obs: Explicação do teste "04" esta na index em forma de texto.
+Obs: Explicação do teste "04" esta na index em forma de texto.
 
 
 
